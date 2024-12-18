@@ -1,6 +1,7 @@
 const addButton = document.getElementById("addTask");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
+
 loadTasks();
 const addTask = () => {
   const task = taskInput.value.trim();
@@ -59,5 +60,5 @@ if (user) {
 }
 document.getElementById("logoutButton").addEventListener("click", () => {
   localStorage.removeItem("user");
-  window.location.href = "login.html";
+  window.location.href = "../login/login.html";
 });

@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", (event) => {
     let parsedUser = JSON.parse(user);
     if (parsedUser.password === password) {
       localStorage.setItem("user", JSON.stringify(parsedUser));
-      window.location.href = "index.html";
+      window.location.href = "../baraa-list/index.html";
     } else {
       alert("incorrect password");
     }
